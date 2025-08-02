@@ -1,0 +1,50 @@
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Video Background</title> 
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #video-background {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: -1000;
+      overflow: hidden;
+    }
+    #video-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-index: 1000;
+    }
+  </style> 
+ </head> 
+ <body> 
+  <video autoplay muted playsinline id="video-background"> 
+   <source src="Latest roblox loading screen.mp4" type="video/mp4"> Your browser does not support the video tag. 
+  </video> 
+  <div id="video-content"> 
+   <!-- Konten tambahan di sini --> 
+  </div> 
+  <script>
+    // Redirect ke URL lain setelah 11 detik
+    setTimeout(function() {
+      window.location.href = "https://apkbr.github.io/yo.com/";
+    }, 11000); // 11000 ms = 11 detik
+  </script> 
+ </body>
+</html>
